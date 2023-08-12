@@ -1,0 +1,29 @@
+.aboutme-container {
+  display: flex;
+  padding: 6.875rem 9.5rem 12.5rem 9.5rem;
+  background: var(--background-dark);
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box; // Include padding in width calculation
+
+  > .content-container, .cards-container {
+    width: 50%;
+  }
+
+  > .content-container {
+    margin-right: 6.75rem;
+  }
+}
+
+#about-me {
+  margin-bottom: 0.88rem;
+}
+
+#my-skill-set {
+  white-space: nowrap;
+}
+
+#with-over {
+  margin-top: 0.88rem;
+  line-height: 130%;
+}

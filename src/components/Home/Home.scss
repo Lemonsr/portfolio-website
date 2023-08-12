@@ -1,0 +1,105 @@
+.home-container {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+    > .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.625rem;
+        margin-top: 18vh;
+        font-size: 18px;
+        opacity: 0;
+        z-index: 30;
+
+        .name-container {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            #hello {
+                color: #898E9F;
+                margin-bottom: 0;
+                transform: translateX(-16%);
+            }
+        }
+
+        #an-aspiring {
+            text-align: center;
+            background: var(--accent-header);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 1.2rem;
+        }
+    }
+}
+
+// switch between english and chinese text on hover
+.fade-text {
+    position: relative;
+    color: var(--primary-color);
+    white-space: nowrap;
+    line-height: 1.2;
+
+    > .initial-text,
+    .hover-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .hover-text {
+        opacity: 0;
+    }
+
+    .full-stop {
+        color: var(--text-header);
+    }
+}
+
+.fade-text:hover .initial-text {
+    opacity: 0;
+}
+
+.fade-text:hover .hover-text {
+    opacity: 1;
+}
+
+#find-out-more {
+    display: inline-flex;
+    padding: 0.5rem 1.25rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    margin-top: 3vw;
+
+    color: var(--text-inverted);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+
+    border-radius: 2.5rem;
+    background: var(--primary-color);
+    transition: background 0.3s ease;
+
+    // Button Shadow
+    box-shadow: 0px 2px 10px 0px var(--primary-button-shadow);
+
+    .arrow {
+        display: inline-block;
+        margin-left: -0.1rem; // Add some space between the text and the arrow
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+#find-out-more:hover {
+    background: var(--primary-hover);
+
+    .arrow {
+        transform: translateX(5px); // Shift the arrow 5 pixels to the right on hover
+    }
+}

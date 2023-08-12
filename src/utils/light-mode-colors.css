@@ -1,0 +1,29 @@
+:root {
+    /* Light Mode */
+
+    /* Primary colors */
+    --primary-color: #E84A79;
+    --primary-hover: #C03760;
+
+    /* Secondary colors */
+
+    /* Background colors */
+    --background-color: #FFFFFF;
+    --background-dark: #F5F5F7;
+
+    /* Text colors */
+    --text-main: #242424;
+    --text-subtitle: #4D4D4D;
+    --text-header: #898E9F;
+    --text-inverted: #FCFCFC;
+
+    /* Accent colors */
+    --accent-header: linear-gradient(133deg, #142545 0%, #3E3C6B 17.63%, #8958A3 36.73%, #C7549F 53.57%, #D74D8B 68.11%, #A23E6B 86.38%, #702D54 100%);
+    --primary-button-shadow: rgba(227, 118, 111, 0.50);
+    --nav-bar-bg: rgba(255, 255, 255, 0.20);
+    --nav-bar-shadow: rgba(43, 40, 74, 0.25);
+
+    --scrollbar-tab: #848383;
+    --scrollbar-tab-hover: #4c4c4e;
+    --scrollbar-bg: #ccc;
+}

@@ -1,0 +1,10 @@
+.parallax-bg-container {
+  display: flex;
+  justify-content: center;
+
+  img {
+      position: absolute;
+      height: 100vh;
+      min-width: 100vw;
+    }
+}

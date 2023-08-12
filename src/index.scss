@@ -1,0 +1,53 @@
+@import 'utils/light-mode-colors.css';
+
+// Reset default browser styles
+body,
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-style: normal;
+  user-select: none;
+}
+
+// Set global font styles
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: SF Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  font-style: normal;
+  line-height: normal;
+  font-size: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-tab);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-tab-hover);
+}
