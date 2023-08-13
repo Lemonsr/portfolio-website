@@ -22,6 +22,8 @@
     --primary-button-shadow: rgba(227, 118, 111, 0.50);
     --nav-bar-bg: rgba(255, 255, 255, 0.20);
     --nav-bar-shadow: rgba(43, 40, 74, 0.25);
+    --card-shadow: -0.625vw 0.5vw 1.875vw 0vw rgba(56, 40, 40, 0.4);
+    --minicard-shadow: -0.4vw 0.5vw 1.2vw 0vw rgba(56, 40, 40, 0.4);
 
     --scrollbar-tab: #848383;
     --scrollbar-tab-hover: #4c4c4e;

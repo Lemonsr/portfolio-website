@@ -1,5 +1,6 @@
 import React from 'react';
 import "./App.scss";
+import ScrollToTopOnLoad from './components/ScrollToTopOnLoad/ScrollToTopOnLoad';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="main-page">
+      <ScrollToTopOnLoad />
       <NavBar />
       <Home />
       <AboutMe />

@@ -6,13 +6,13 @@ h1,
 h2,
 h3,
 h4,
+h5,
 a,
 p {
   margin: 0;
   padding: 0;
   line-height: normal;
   font-style: normal;
-  user-select: none;
 }
 
 // Set global font styles
@@ -26,9 +26,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-
-  font-style: normal;
-  line-height: normal;
   font-size: 100%;
 }
 
@@ -50,4 +47,9 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--scrollbar-tab-hover);
+}
+
+// Text selection highlight
+::selection {
+  color: var(--primary-color);
 }

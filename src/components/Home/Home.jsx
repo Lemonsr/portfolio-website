@@ -4,7 +4,7 @@ import Parallax from '../Parallax/Parallax';
 import { motion } from 'framer-motion';
 
 function Home() {
-  return <div className='home-container'>
+  return <div id='home' className='home-container'>
 
     <Parallax />
 
