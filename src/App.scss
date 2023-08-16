@@ -48,11 +48,15 @@ p {
     align-items: center;
 }
 
+.header {
+    margin-bottom: 0.88rem;
+}
+
 // Responsive layout adjustments
 // Only supported for tablet to PC sizes, not mobile
 
 @media screen and (min-width: 1440px) {
-    h1 { font-size: 4vw; }
+    h1 { font-size: 4rem; }
     h2 { font-size: 6rem; }
     h3 { font-size: 2vw; }
     h4 { font-size: 1.6rem; }
@@ -62,7 +66,7 @@ p {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    h1 {  font-size: 3rem; }
+    h1 {  font-size: 4rem; }
     h2 {  font-size: 4.6rem; }
     h3 { font-size: 1.5rem; }
     h4 { font-size: 1.6rem; }
@@ -72,7 +76,7 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    h1 { font-size: 5vw; }
+    h1 { font-size: 5.8vw; }
     h2 { font-size: 6rem; }
     h3 { font-size: 2.8vw; }
     h4 { font-size: 1.6rem; }

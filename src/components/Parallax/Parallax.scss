@@ -1,6 +1,7 @@
 .parallax-bg-container {
   display: flex;
   justify-content: center;
+  z-index: -40;
 
   img {
       position: absolute;
