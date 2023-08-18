@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './MyArtworks.scss';
 import { motion } from 'framer-motion';
+import Carousels from '../Carousels/Carousels';
 
 function MyArtworks() {
   return <div id='artworks' className='myartworks-container'>
@@ -18,6 +19,9 @@ function MyArtworks() {
           whileInView={{ opacity: 1, y: 0 }}>
           <h2>Digital illustrations I drew for fun.</h2>
         </motion.div>
+      </div>
+      <div>
+        <Carousels />
       </div>
     </div>
   </div>

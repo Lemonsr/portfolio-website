@@ -1,0 +1,13 @@
+.carousel {
+  display: flex;
+  height: 30vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.slide {
+  border-radius: 1.2rem;
+  width: 45vw;
+}

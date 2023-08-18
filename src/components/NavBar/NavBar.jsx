@@ -6,8 +6,8 @@ import { Link } from 'react-scroll';
 function NavBar() {
   return <motion.div
           className='navbar-container'
-          initial={{ scale: 0.7 }}
-          animate={{ scale: 1 }}
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', duration: 1, delay: 0.5 }}>
 
         <div className='navbar'>
