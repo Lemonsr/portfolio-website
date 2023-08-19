@@ -52,6 +52,35 @@ p {
     margin-bottom: 0.88rem;
 }
 
+// for all content sections (e.g. Home, About Me, Projects)
+.section {
+    min-height: 100vh;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+// For the purplish gradient animation on text
+.animated-text {
+    background: var(--accent-header);
+    background-size: 360% 360%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 30s ease infinite;
+}
+
 // Responsive layout adjustments
 // Only supported for tablet to PC sizes, not mobile
 

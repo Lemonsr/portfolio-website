@@ -3,9 +3,12 @@ import './Carousels.scss';
 import Carousel from 'react-spring-3d-carousel';
 import { v4 as uuidv4 } from 'uuid';
 import { config } from 'react-spring';
+import ArrowLeft from '../../assets/svgs/Arrow-Left.svg';
+import ArrowRight from '../../assets/svgs/Arrow-Right.svg';
 
 export default class Carousels extends Component {
   state = {
+    activeSlide: 0,
     goToSlide: 0,
     offsetRadius: 2,
     showNavigation: false,
@@ -35,7 +38,7 @@ export default class Carousels extends Component {
       content: <img className='slide' src='src/assets/images/Art5.png' alt='5' />
     }
     ].map((slide, index) => {
-      return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
+      return { ...slide, onClick: () => this.setState({ activeSlide: index, goToSlide: index }) };
   });
 
   onChangeInput = (e) => {
@@ -47,15 +50,44 @@ export default class Carousels extends Component {
   render() {
     return (
       <div className='carousel'>
-        <Carousel
-          slides={this.slides}
-          goToSlide={this.state.goToSlide}
-          offsetRadius={this.state.offsetRadius}
-          showNavigation={this.state.showNavigation}
-          animationConfig={this.state.config}
-          offsetFn={this.state.offsetFn}
-        />
+          <Carousel
+            slides={this.slides}
+            goToSlide={this.state.goToSlide}
+            offsetRadius={this.state.offsetRadius}
+            showNavigation={this.state.showNavigation}
+            animationConfig={this.state.config}
+            offsetFn={this.state.offsetFn}
+          />
+        <div className='controls'>
+          <button
+            onClick={() => {
+              const { goToSlide } = this.state;
+              const nextSlide = goToSlide === 0 ? 4 : goToSlide - 1;
+              this.setState({ activeSlide: nextSlide, goToSlide: nextSlide });
+            }}
+          >
+            <img src={ArrowLeft} alt='ArrowLeft'/>
+          </button>
+          <div className='dot-navigation'>
+            {this.slides.map((_, index) => (
+              <div
+                key={index}
+                className={`dot ${this.state.activeSlide === index ? 'active' : ''}`}
+                onClick={() => this.setState({ activeSlide: index, goToSlide: index })}
+              />
+            ))}
+          </div>
+          <button
+            onClick={() => {
+              const { goToSlide } = this.state;
+              const nextSlide = goToSlide === 4 ? 0 : goToSlide + 1;
+              this.setState({ activeSlide: nextSlide, goToSlide: nextSlide });
+            }}
+          >
+            <img src={ArrowRight} alt='ArrowRight'/>
+          </button>
+        </div>
       </div>
-    );
+    ); 
   }
 }

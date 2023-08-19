@@ -1,10 +1,11 @@
 import React from 'react';
-import "./Home.scss";
+import './Home.scss';
 import Parallax from '../Parallax/Parallax';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 function Home() {
-  return <div id='home' className='home-container'>
+  return <div id='home' className='home-container section'>
 
     <Parallax />
 
@@ -22,13 +23,13 @@ function Home() {
           <h3 id='hello'>
             Hello, my name is&nbsp;
             <span className='fade-text'>
-              <span className='initial-text'>Xin Yan<span className="full-stop">.</span></span>
-              <span className='hover-text'>歆妍<span className="full-stop">.</span></span>
+              <span className='initial-text'>Xin Yan<span className='full-stop'>.</span></span>
+              <span className='hover-text'>歆妍<span className='full-stop'>.</span></span>
             </span>
           </h3>
       </div>
 
-      <div id='an-aspiring'>
+      <div className='animated-text' id='an-aspiring'>
         <h1>An aspiring UI/UX designer</h1>
         <h1>looking to make stunning,</h1>
         <h1>user-friendly digital</h1>
@@ -45,9 +46,11 @@ function Home() {
         duration: 1, 
         delay: 0.8 }}>
 
-      <button id='find-out-more'>Find out more
-        <span className="arrow">→</span>
-      </button>
+      <Link to="about-me" smooth>
+        <button id='find-out-more'>Find out more
+          <span className='arrow'>→</span>
+        </button>
+      </Link>
 
       </motion.div>
 

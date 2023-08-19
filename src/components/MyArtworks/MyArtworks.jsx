@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './MyArtworks.scss';
 import { motion } from 'framer-motion';
 import Carousels from '../Carousels/Carousels';
+import AnimatedButton from '../AnimatedButton/AnimatedButton';
 
 function MyArtworks() {
-  return <div id='artworks' className='myartworks-container'>
+  return <div id='artworks' className='myartworks-container section'>
     <div className='content-container'>
       <div className='text-container'>
         <motion.h4 className='header'
@@ -22,6 +23,9 @@ function MyArtworks() {
       </div>
       <div>
         <Carousels />
+      </div>
+      <div>
+        <AnimatedButton />
       </div>
     </div>
   </div>

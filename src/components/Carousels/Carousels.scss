@@ -1,4 +1,5 @@
 .carousel {
+  position: relative;
   display: flex;
   height: 30vw;
   flex-direction: column;
@@ -8,6 +9,34 @@
 }
 
 .slide {
+  position: absolute;
   border-radius: 1.2rem;
   width: 45vw;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.dot-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.5;
+  margin: 0 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--carousel-dot-color); // Change to the desired active color
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 1;
 }

@@ -5,7 +5,7 @@ import cardConfigs from '../ProjectCard/ProjectCardDescriptions';
 import { motion } from 'framer-motion';
 
 function MyProjects() {
-  return <div id='projects' className='myprojects-container'>
+  return <div id='projects' className='myprojects-container section'>
     <div className='content-container'>
       <div className='text-container'>
         <motion.h4 className='header'

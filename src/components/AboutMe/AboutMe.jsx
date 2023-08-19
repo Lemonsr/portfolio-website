@@ -14,7 +14,7 @@ import cardConfigs from '../StatsCard/StatsCardDescriptions';
 import { motion } from 'framer-motion';
 
 function AboutMe() {
-  return <div id='about-me' className='aboutme-container'>
+  return <div id='about-me' className='aboutme-container section'>
     <div className='content-container'>
       <div className='text-container'>
         <motion.h4 className='header'
