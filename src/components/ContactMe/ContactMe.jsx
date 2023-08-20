@@ -1,12 +1,15 @@
 import React from 'react';
 import './ContactMe.scss';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import cardConfigs from '../ProjectCard/ProjectCardDescriptions';
+import AnimatedLine from '../AnimatedLine/AnimatedLine';
 import { motion } from 'framer-motion';
+import LinkedIn from '../LinkedIn/LinkedIn';
 
 function ContactMe() {
   return <div id='contact' className='contact-container section'>
     <div className='content-container'>
+      <div>
+        <LinkedIn />
+      </div>
       <div className='text-container'>
         <motion.h4 className='header'
           initial={{ opacity: 0, y: 150 }}
@@ -22,6 +25,9 @@ function ContactMe() {
           <h2>working with me?</h2>
           <h2 className='animated-text'>Get in touch.</h2>
         </motion.div>
+        <div>
+          <AnimatedLine />
+        </div>
       </div>
     </div>
   </div>
