@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const AnimatedLine = () => {
   const pathControls = useAnimation();
+  const [isVisible, setIsVisible] = useState(false);
+  const visibilitySensorRef = useRef(null);
 
-  const startDrawing = async (isVisible) => {
-    if (isVisible) {
-      await pathControls.start({ pathLength: 1, transition: { duration: 3 } });
-    }
-  };
+  useEffect(() => {
+    const startDrawing = async () => {
+      if (isVisible) {
+        await pathControls.start({ pathLength: 1, transition: { duration: 3 } });
+      }
+    };
+    startDrawing();
+  }, [isVisible, pathControls]);
 
   return (
     <div>
-      <VisibilitySensor onChange={startDrawing} partialVisibility>
+      <VisibilitySensor ref={visibilitySensorRef} onChange={(isVisible) => setIsVisible(isVisible)} partialVisibility>
         {({ isVisible }) => (
           <svg width="495" height="28" viewBox="0 0 495 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <motion.path

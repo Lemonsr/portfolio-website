@@ -24,10 +24,16 @@
     --nav-bar-shadow: rgba(43, 40, 74, 0.25);
     --card-shadow: -0.625vw 0.5vw 1.875vw 0vw rgba(56, 40, 40, 0.4);
     --minicard-shadow: -0.4vw 0.5vw 1.2vw 0vw rgba(56, 40, 40, 0.4);
+    --linkedin-profile-shadow: 0px 0px 10px 0px rgba(21, 21, 21, 0.70);
+    --linkedin-card-shadow: -10px 8px 30px 0px rgba(56, 40, 40, 0.20);
+    --linkedin-button-shadow: 0px 0px 8px 0px rgba(3, 10, 73, 0.30);
+    --linkedin-button-color: #0A66C2;
 
     --scrollbar-tab: #848383;
     --scrollbar-tab-hover: #4c4c4e;
     --scrollbar-bg: #ccc;
 
     --carousel-dot-color: #7B61FF;
+
+    --linkedin-outline: #E0DFDC;
 }

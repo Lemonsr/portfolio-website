@@ -7,9 +7,6 @@ import LinkedIn from '../LinkedIn/LinkedIn';
 function ContactMe() {
   return <div id='contact' className='contact-container section'>
     <div className='content-container'>
-      <div>
-        <LinkedIn />
-      </div>
       <div className='text-container'>
         <motion.h4 className='header'
           initial={{ opacity: 0, y: 150 }}
@@ -29,6 +26,9 @@ function ContactMe() {
           <AnimatedLine />
         </div>
       </div>
+      
+      <LinkedIn />
+    
     </div>
   </div>
 }
