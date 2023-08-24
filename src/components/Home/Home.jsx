@@ -36,23 +36,20 @@ function Home() {
         <h1>experiences.</h1>
       </div>
 
-      <motion.div  
-      className='button-container'
+      <motion.a  
+      className='find-out-more'
+      href="#about-me" 
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ 
         type: 'spring', 
         damping: 4, 
         duration: 1, 
-        delay: 0.8 }}>
-
-      <Link to="about-me" smooth>
-        <button id='find-out-more'>Find out more
-          <span className='arrow'>→</span>
-        </button>
-      </Link>
-
-      </motion.div>
+        delay: 0.8 }}
+      >
+      Find out more
+      <span className='arrow'>→</span>
+      </motion.a>
 
     </motion.div>
   </div>;

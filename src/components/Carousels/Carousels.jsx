@@ -19,23 +19,23 @@ export default class Carousels extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img className='slide' src='src/assets/images/Art1.png' alt='1' />
+      content: <img className='slide' src='src/assets/images/Art1.webp' alt='1' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='src/assets/images/Art2.png' alt='2' />
+      content: <img className='slide' src='src/assets/images/Art2.webp' alt='2' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='src/assets/images/Art3.png' alt='3' />
+      content: <img className='slide' src='src/assets/images/Art3.webp' alt='3' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='src/assets/images/Art4.png' alt='4' />
+      content: <img className='slide' src='src/assets/images/Art4.webp' alt='4' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='src/assets/images/Art5.png' alt='5' />
+      content: <img className='slide' src='src/assets/images/Art5.webp' alt='5' />
     }
     ].map((slide, index) => {
       return { ...slide, onClick: () => this.setState({ activeSlide: index, goToSlide: index }) };

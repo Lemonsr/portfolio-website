@@ -1,8 +1,8 @@
 import React from 'react';
 import './LinkedIn.scss';
-import Banner from '../../assets/svgs/Banner.svg';
-import ProfilePicture from '../../assets/svgs/Profile-Picture.svg';
-import Connections from '../../assets/svgs/Connections.svg';
+import Banner from '../../assets/images/Banner.png';
+import ProfilePicture from '../../assets/images/Profile-Picture.png';
+import Connections from '../../assets/images/Connections.png';
 
 function LinkedIn() {
   return <div className='linkedin-container'>
@@ -21,7 +21,7 @@ function LinkedIn() {
     </p>
 
     <div className='connections-container'>
-      <img src={Connections} alt='Connections'/>
+      <img className='connections-pics' src={Connections} alt='Connections'/>
       <p id='everyone-you-know'>
         Everyone you know follows this person
       </p>

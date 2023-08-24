@@ -15,6 +15,10 @@ p {
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Set global font styles
 body {
   display: flex;

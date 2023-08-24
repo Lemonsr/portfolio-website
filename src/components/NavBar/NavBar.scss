@@ -18,12 +18,13 @@
     backdrop-filter: blur(10px);
     box-sizing: border-box;
 
-    a {
+    > a {
         color: var(--text-subtitle);
-        transition: color 0.3s;
+        transition: color 0.3s, scale 0.3s;
 
         &:hover {
             color: var(--primary-color);
+            scale: 1.1;
         }
     }
 }

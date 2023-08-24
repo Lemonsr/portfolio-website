@@ -30,6 +30,10 @@
     display: flex;
     align-items: center;
 
+    > .connections-pics {
+      width: 67.32px;
+    }
+
     #everyone-you-know {
         color: var(--text-subtitle);
         font-size: 1rem;

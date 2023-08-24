@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactMe.scss';
-import AnimatedLine from '../AnimatedLine/AnimatedLine';
+// import AnimatedLine from '../AnimatedLine/AnimatedLine';
 import { motion } from 'framer-motion';
 import LinkedIn from '../LinkedIn/LinkedIn';
 
@@ -21,9 +21,9 @@ function ContactMe() {
         <h2>working with me?</h2>
         <h2 className='animated-text'>Get in touch.</h2>
       </motion.div>
-      <div>
+      {/* <div>
         <AnimatedLine />
-      </div>
+      </div> */}
     </div>
     
     <div className='linkedin'>
