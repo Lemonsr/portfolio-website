@@ -28,8 +28,11 @@ function LinkedIn() {
     </div>
 
     <div className='linkedin-buttons'>
-      <button className='connect'>Connect</button>
-      <button className='resume'>Get her resume</button>
+      <a className='connect' 
+      href="https://www.linkedin.com/in/liawxinyan2001/"
+      target="_blank"
+      rel="noopener noreferrer">Connect</a>
+      <a className='resume'>Get her resume</a>
     </div>
 
   </div>

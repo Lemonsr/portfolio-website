@@ -53,9 +53,9 @@ p {
 }
 
 // for all content sections (e.g. Home, About Me, Projects)
-.section {
-    min-height: 100vh;
-}
+// .section {
+//     min-height: 100vh;
+// }
 
 @keyframes gradient-animation {
     0% {
@@ -97,7 +97,7 @@ p {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     h1 {  font-size: 4rem; }
     h2 {  font-size: 4.6rem; }
-    h3 { font-size: 1.5rem; }
+    h3 { font-size: 1.8rem; }
     h4 { font-size: 1.6rem; }
     h5 { font-size: 2.6rem; }
     a { font-size: 1.1rem; }
