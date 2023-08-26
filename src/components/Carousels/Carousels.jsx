@@ -66,7 +66,7 @@ export default class Carousels extends Component {
               this.setState({ activeSlide: nextSlide, goToSlide: nextSlide });
             }}
           >
-            <img src={ArrowLeft} alt='ArrowLeft'/>
+            <img className='arrow-left' src={ArrowLeft} alt='ArrowLeft'/>
           </button>
           <div className='dot-navigation'>
             {this.slides.map((_, index) => (
@@ -84,7 +84,7 @@ export default class Carousels extends Component {
               this.setState({ activeSlide: nextSlide, goToSlide: nextSlide });
             }}
           >
-            <img src={ArrowRight} alt='ArrowRight'/>
+            <img className='arrow-right' src={ArrowRight} alt='ArrowRight'/>
           </button>
         </div>
       </div>

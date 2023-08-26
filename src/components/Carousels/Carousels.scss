@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   display: flex;
-  height: 30vw;
+  height: 30rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
 .slide {
   position: absolute;
   border-radius: 1.2rem;
-  width: 45vw;
+  width: 45rem;
 }
 
 .controls {
@@ -39,4 +39,20 @@
   width: 0.75rem;
   height: 0.75rem;
   opacity: 1;
+}
+
+.arrow-left {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateX(-5px);
+  }
+}
+
+.arrow-right {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateX(5px);
+  }
 }

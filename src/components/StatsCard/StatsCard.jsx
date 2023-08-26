@@ -8,7 +8,7 @@ function StatsCard({ data }) {
       whileInView={{ scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, type: 'spring', bounce: 0.4, delay: data.id === '1' ? 0.05 : data.id === '2' ? 0.35 : 0.65}}>
-    <h5 id='header' style={{ backgroundImage: data.colour }}>{ data.header }</h5>
+    <h5 id='number' style={{ backgroundImage: data.colour }}>{ data.header }</h5>
     <p id='description'>{ data.description }</p>
   </motion.div>;
 }

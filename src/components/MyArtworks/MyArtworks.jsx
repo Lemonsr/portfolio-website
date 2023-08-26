@@ -21,7 +21,7 @@ function MyArtworks() {
           <h2>Digital illustrations I drew for fun.</h2>
         </motion.div>
       </div>
-      <div>
+      <div className='carousel-container'>
         <Carousels />
       </div>
       <div>

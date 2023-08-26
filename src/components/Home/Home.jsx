@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
 function Home() {
-  return <div id='home' className='home-container section'>
+  return <div id='home' className='home-container'>
 
     <Parallax />
 

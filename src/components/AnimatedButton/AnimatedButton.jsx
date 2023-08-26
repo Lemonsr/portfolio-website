@@ -21,7 +21,7 @@ const AnimatedButton = () => {
       transition={{ type: "spring", bounce: 0.5 }}
     >
       <div className='logo'>
-        <img src = "src/assets/images/Instagram.png" alt="Instagram Logo"/>
+        <img src = "src/assets/svgs/Instagram.svg" alt="Instagram Logo"/>
       </div>
       <div className='label-text'>
         <p id='view-more-at'>VIEW MORE AT</p>

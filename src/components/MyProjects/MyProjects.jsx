@@ -14,7 +14,7 @@ function MyProjects() {
           whileInView={{ opacity: 1, y: 0 }}>
             My Projects
         </motion.h4>
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, y: 150 }}
           viewport={{ once: true }}
           whileInView={{ opacity: 1, y: 0 }}>

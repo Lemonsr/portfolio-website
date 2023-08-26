@@ -13,6 +13,7 @@ h1 {
 
 h2 {
     font-weight: 580;
+    line-height: 110%;
     color: var(--text-main);
 }
 
@@ -38,7 +39,7 @@ a {
 }
 
 p {
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-subtitle);
 }
 
@@ -53,9 +54,9 @@ p {
 }
 
 // for all content sections (e.g. Home, About Me, Projects)
-// .section {
-//     min-height: 100vh;
-// }
+.section {
+  padding: 6.875rem 9.5vw;
+}
 
 @keyframes gradient-animation {
     0% {
@@ -84,7 +85,35 @@ p {
 // Responsive layout adjustments
 // Only supported for tablet to PC sizes, not mobile
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2560px) {
+    .section {
+        padding: 6.875rem 20%;
+    }
+    
+    h1 { font-size: 5rem; }
+    h2 { font-size: 6rem; }
+    h3 { font-size: 2vw; }
+    h4 { font-size: 1.8rem; }
+    h5 { font-size: 3.125rem; }
+    a { font-size: 1.1rem; }
+    p { font-size: 1.4rem; }
+}
+
+@media screen and (min-width: 1980px) and (max-width: 2559px) {
+    .section {
+        padding: 6.875rem 15%;
+    }
+
+    h1 { font-size: 5rem; }
+    h2 { font-size: 6rem; }
+    h3 { font-size: 2vw; }
+    h4 { font-size: 1.6rem; }
+    h5 { font-size: 3.125rem; }
+    a { font-size: 1.1rem; }
+    p { font-size: 1.4rem; }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1980px) {
     h1 { font-size: 4rem; }
     h2 { font-size: 6rem; }
     h3 { font-size: 2vw; }
@@ -101,15 +130,15 @@ p {
     h4 { font-size: 1.6rem; }
     h5 { font-size: 2.6rem; }
     a { font-size: 1.1rem; }
-    p { font-size: 1.4rem; }
+    p { font-size: 1.2rem; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     h1 { font-size: 5.8vw; }
-    h2 { font-size: 6rem; }
+    h2 { font-size: 4.4rem; }
     h3 { font-size: 2.8vw; }
     h4 { font-size: 1.6rem; }
     h5 { font-size: 3.125rem; }
     a { font-size: 1rem; }
-    p { font-size: 1.4rem; }
+    p { font-size: 1.2rem; }
 }

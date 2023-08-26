@@ -19,7 +19,7 @@
 
     /* Accent colors */
     --accent-header: linear-gradient(300deg, #6645eb, #C7549F, #515aaddc, #995FA0, #D45192, #b1376ed8, #764ce9, #D74D8B);
-    --primary-button-shadow: rgba(227, 118, 111, 0.50);
+    --primary-button-shadow: 0px 2px 10px 0px rgba(227, 118, 111, 0.50);
     --nav-bar-bg: rgba(255, 255, 255, 0.20);
     --nav-bar-shadow: rgba(43, 40, 74, 0.25);
     --card-shadow: -0.625vw 0.5vw 1.875vw 0vw rgba(56, 40, 40, 0.4);
@@ -29,7 +29,7 @@
     --linkedin-button-shadow: 0px 0px 8px 0px rgba(3, 10, 73, 0.30);
     --linkedin-button-color: #0A66C2;
     --linkedin-button-hover: #0853A0;
-    --contact-me-text-bg: linear-gradient(269deg, #FFF 0%, #FFF 63.99%, rgba(255, 255, 255, 0.00) 100%);
+    --contact-me-text-bg: linear-gradient(270deg, #FFF 0%, #FFF 48.44%, rgba(255, 255, 255, 0.00) 100%);
 
     --scrollbar-tab: #848383;
     --scrollbar-tab-hover: #4c4c4e;

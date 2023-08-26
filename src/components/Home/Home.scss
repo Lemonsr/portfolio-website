@@ -1,8 +1,8 @@
 .home-container {
     display: inline-flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 67rem;
     
     > .content-container {
         display: flex;
@@ -82,7 +82,7 @@
     background: var(--primary-color);
     transition: background 0.3s ease;
 
-    box-shadow: 0px 2px 10px 0px var(--primary-button-shadow);
+    box-shadow: var(--primary-button-shadow);
 
     .arrow {
         display: inline-block;

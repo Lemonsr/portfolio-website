@@ -1,5 +1,4 @@
 .contact-container {
-  padding: 6.875rem 9.5vw;
   background: var(--background-color);
   width: 100vw;
   box-sizing: border-box; // Include padding in width calculation
@@ -11,11 +10,19 @@
 
   .text-container {
     text-align: end;
-    width: fit-content;
-    padding-bottom: 7rem;
+    padding-bottom: 4rem;
     z-index: 1;
     float: right;
     background: var(--contact-me-text-bg);
+    pointer-events: none; // So that the bg does not block us from clicking the button behind it
+
+    > .text {
+      pointer-events: all;
+      
+      #working-with-me {
+        white-space: nowrap;
+      }
+    }
   }
 }
 
@@ -23,8 +30,18 @@
   .linkedin {
     position: absolute;
   }
-  .text-container {
+  .contact-container > .text-container {
     position: relative;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .underline {
+    width: 25rem;
+  }
+  .contact-container > .text-container {
+    width: 80%;
   }
 }
 
@@ -32,5 +49,14 @@
   .contact-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .underline {
+    width: 24rem;
+  }
+
+  .contact-container > .text-container {
+    width: 100%;
+    height: fit-content;
   }
 }
