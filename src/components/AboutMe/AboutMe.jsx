@@ -22,7 +22,7 @@ function AboutMe() {
           <h2>My skill set and</h2>
           <h2>expertise.</h2>
         </motion.div>
-        <p className='main-text'>Nothing excites me more than building solutions that brings people joy. With over 6 years of experience as a digital illustrator, I’ve honed my skills in creating intuitive, user-centred designs that are both beautiful and interactive using Figma. I taught myself HTML, CSS, and JavaScript, and now use Vite with React to bring my designs to life.</p>
+        <p className='main-text'>Nothing excites me more than creating solutions that brings people joy. With over 6 years of experience as a digital illustrator, I’ve honed my skills in creating intuitive, user-centred designs that are both beautiful and interactive using Figma. I taught myself HTML, CSS, and JavaScript, and now use Vite with React to bring my designs to life.</p>
       </div>
       <div className='stats-container'>
         {cardConfigs.map((config) => {

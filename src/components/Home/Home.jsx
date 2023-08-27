@@ -2,7 +2,6 @@ import React from 'react';
 import './Home.scss';
 import Parallax from '../Parallax/Parallax';
 import { motion } from 'framer-motion';
-import { Link } from 'react-scroll';
 
 function Home() {
   return <div id='home' className='home-container'>

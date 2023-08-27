@@ -3,9 +3,9 @@
   justify-content: center;
   z-index: -40;
 
-  img {
+  > img {
       position: absolute;
       min-width: 100vw;
-      height: 67rem;
+      min-height: 67rem;
     }
 }
