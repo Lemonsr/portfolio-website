@@ -1,0 +1,81 @@
+.skills-container {
+  margin: auto;
+  background: var(--background-dark);
+  width: 100vw;
+  box-sizing: border-box;
+
+  > .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 5rem;
+
+    > .skill-description {
+      padding: 3.5rem;
+      border-radius: 1.8rem;
+      box-shadow: var(--container-shadow);
+      background: var(--text-inverted);
+      
+      // use inherit to ignore <a> tag styling and follow parent style.
+      a {
+        font-weight: 500;
+        color: var(--primary-color);
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        font-size: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 2.5rem;
+  
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+
+    .tag {
+      border: 1px solid var(--tag-outline);
+      background: var(--text-inverted);
+      width: fit-content;
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.5rem;
+
+      font-weight: 500;
+      color: var(--text-subtitle);
+      letter-spacing: 0.01em;
+
+      &:hover {
+        background: var(--tag-hover-bg);
+      }
+    }
+  }
+
+  .icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  filter: var(--icon-filter);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills-container > .grid-container {
+    grid-template-columns: 1fr; // Single column layout
+  }
+}

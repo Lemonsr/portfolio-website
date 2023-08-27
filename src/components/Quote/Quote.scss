@@ -1,0 +1,17 @@
+.quote-container {
+  margin: auto;
+  background: var(--background-dark);
+  width: 100vw;
+  box-sizing: border-box;
+  
+  > .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--quote-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

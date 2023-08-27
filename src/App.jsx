@@ -3,6 +3,8 @@ import './App.scss';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
+import Quote from './components/Quote/Quote';
+import Skills from './components/Skills/Skills';
 import MyProjects from './components/MyProjects/MyProjects';
 import MyArtworks from './components/MyArtworks/MyArtworks';
 import ContactMe from './components/ContactMe/ContactMe';
@@ -17,6 +19,8 @@ function App() {
       <NavBar />
       <Home />
       <AboutMe />
+      <Quote />
+      <Skills />
       <MyProjects />
       <MyArtworks />
       <ContactMe />

@@ -22,9 +22,9 @@
             align-items: center;
 
             #hello {
-                color: #898E9F;
+                color: var(--title-text);
                 margin-bottom: 0;
-                transform: translateX(-16%);
+                transform: translateX(-19%);
             }
         }
 
