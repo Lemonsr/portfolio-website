@@ -1,0 +1,34 @@
+.big-project-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 5rem;
+  grid-row-gap: 2rem;
+  margin: 3rem 1.25rem;
+  align-items: center;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+    .role {
+      font-size: 1.2rem;
+      font-weight: 450;
+    }
+  }
+  
+  > img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .big-project-container {
+    grid-template-columns: 1fr;
+
+    > img {
+      order: -1; // move above text when view is shrunk
+    }
+  }
+}

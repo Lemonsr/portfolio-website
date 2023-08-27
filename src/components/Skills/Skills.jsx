@@ -43,18 +43,18 @@ function Skills() {
       transition: {
         type: 'spring',
         bounce: 0.2,
-        duration: 1.5,
+        duration: 1.8,
         delay: 0.2
       }
     },
   }
 
   const item_variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 80 },
     visible: { opacity: 1, y: 0,
       transition: {
         duration: 0.4,
-        delay: 0.4
+        delay: 0.6
       }
     },
   }

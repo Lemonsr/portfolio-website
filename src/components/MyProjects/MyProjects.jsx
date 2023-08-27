@@ -1,7 +1,7 @@
 import React from 'react';
 import './MyProjects.scss';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import cardConfigs from '../ProjectCard/ProjectCardDescriptions';
+import BigProject from '../BigProject/BigProject';
+import BigCardConfigs from '../BigProject/BigProjectDescriptions';
 import { motion } from 'framer-motion';
 
 function MyProjects() {
@@ -22,9 +22,9 @@ function MyProjects() {
         </motion.div>
       </div>
 
-      <div className='projects-container'>
-        {cardConfigs.map((config) => {
-          return <ProjectCard key={config.id} data={config}/>
+      <div className='big-projects-container'>
+        {BigCardConfigs.map((config) => {
+          return <BigProject key={config.id} data={config}/>
         })}
       </div>
     </div>
