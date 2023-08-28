@@ -11,6 +11,22 @@
     flex-direction: column;
     flex: 2;
 
+    .title-container {
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      > a {
+        font-weight: 500;
+        color: var(--primary-color);
+        letter-spacing: 0.01em;
+        font-size: inherit;
+    
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
     .role {
       font-size: 1.2rem;
       font-weight: 450;

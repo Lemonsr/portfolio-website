@@ -20,10 +20,10 @@ function Home() {
 
       <div className='name-container'>        
           <h3 id='hello'>
-            Hello, my name is&nbsp;
+            Hi there, I'm&nbsp;
             <span className='fade-text'>
-              <span className='initial-text'>Xin Yan<span className='full-stop'>.</span></span>
-              <span className='hover-text'>歆妍<span className='full-stop'>.</span></span>
+              <span className='initial-text'>Xin Yan<span className='full-stop'>!</span></span>
+              <span className='hover-text'>歆妍<span className='full-stop'>!</span></span>
             </span>
           </h3>
       </div>

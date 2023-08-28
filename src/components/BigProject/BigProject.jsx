@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 function BigProject({ data }) {
   // Split content into multiple paragraphs if needed.
+  const title_company = data.title.split('\n\n');
   const paragraphs = data.description.split('\n\n');
 
   return (
@@ -17,7 +18,10 @@ function BigProject({ data }) {
         duration: 2}}
     >
       <div className='text-container'>
-        <h6 className='mb-2'>{ data.title }</h6>
+        <h6 className='title-container mb-2'>
+          <div className='mr-8'>{ title_company[0] }</div>
+          <a href={ data.company_link } target='_blank' rel='noopener noreferrer'>{ title_company[1] }</a>
+        </h6>
         <p className='role mb-4'>{ data.role }</p>
         {paragraphs.map((paragraph, index) => (
           <p className='mb-8' key={index}>{paragraph}</p>
