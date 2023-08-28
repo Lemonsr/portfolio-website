@@ -3,8 +3,8 @@ import './Carousels.scss';
 import Carousel from 'react-spring-3d-carousel';
 import { v4 as uuidv4 } from 'uuid';
 import { config } from 'react-spring';
-import ArrowLeft from 'assets/svgs/Arrow-Left.svg';
-import ArrowRight from 'assets/svgs/Arrow-Right.svg';
+import ArrowLeft from '../../assets/svgs/Arrow-Left.svg';
+import ArrowRight from '../../assets/svgs/Arrow-Right.svg';
 
 export default class Carousels extends Component {
   state = {
