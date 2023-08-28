@@ -3,8 +3,8 @@ import './Carousels.scss';
 import Carousel from 'react-spring-3d-carousel';
 import { v4 as uuidv4 } from 'uuid';
 import { config } from 'react-spring';
-import ArrowLeft from '../../assets/svgs/Arrow-Left.svg';
-import ArrowRight from '../../assets/svgs/Arrow-Right.svg';
+import ArrowLeft from 'assets/svgs/Arrow-Left.svg';
+import ArrowRight from 'assets/svgs/Arrow-Right.svg';
 
 export default class Carousels extends Component {
   state = {
@@ -19,23 +19,23 @@ export default class Carousels extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img className='slide' src='../../assets/images/Art1.webp' alt='1' />
+      content: <img className='slide' src='assets/images/Art1.webp' alt='1' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='../../assets/images/Art2.webp' alt='2' />
+      content: <img className='slide' src='assets/images/Art2.webp' alt='2' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='../../assets/images/Art3.webp' alt='3' />
+      content: <img className='slide' src='assets/images/Art3.webp' alt='3' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='../../assets/images/Art4.webp' alt='4' />
+      content: <img className='slide' src='assets/images/Art4.webp' alt='4' />
     },
     {
       key: uuidv4(),
-      content: <img className='slide' src='../../assets/images/Art5.webp' alt='5' />
+      content: <img className='slide' src='assets/images/Art5.webp' alt='5' />
     }
     ].map((slide, index) => {
       return { ...slide, onClick: () => this.setState({ activeSlide: index, goToSlide: index }) };
