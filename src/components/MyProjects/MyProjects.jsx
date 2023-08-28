@@ -3,6 +3,7 @@ import './MyProjects.scss';
 import BigProject from '../BigProject/BigProject';
 import BigCardConfigs from '../BigProject/BigProjectDescriptions';
 import { motion } from 'framer-motion';
+import { Tooltip } from 'react-tooltip';
 
 function MyProjects() {
   return <div id='projects' className='myprojects-container section'>
@@ -27,6 +28,9 @@ function MyProjects() {
           return <BigProject key={config.id} data={config}/>
         })}
       </div>
+
+
+      <Tooltip id='tooltip' />
     </div>
   </div>
 }

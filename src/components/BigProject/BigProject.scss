@@ -3,7 +3,7 @@
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 5rem;
   grid-row-gap: 2rem;
-  margin: 3rem 1.25rem;
+  margin: 3rem 1.5rem;
   align-items: center;
 
   .text-container {
@@ -15,11 +15,18 @@
       font-size: 1.2rem;
       font-weight: 450;
     }
+
+    .icon-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+    }
   }
   
   > img {
     width: 30rem;
     height: auto;
+    border-radius: 0.45rem;
   }
 }
 

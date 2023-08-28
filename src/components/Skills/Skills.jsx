@@ -5,6 +5,7 @@ import adobexd from '../../assets/svgs/icons/adobexd.svg';
 import aseprite from '../../assets/svgs/icons/aseprite.svg';
 import balsamiq from '../../assets/svgs/icons/balsamiq.svg';
 import blender from '../../assets/svgs/icons/blender.svg';
+import cinema4d from '../../assets/svgs/icons/cinema4d.svg';
 import clipstudiopaint from '../../assets/svgs/icons/clipstudiopaint.svg';
 import cplusplus from '../../assets/svgs/icons/cplusplus.svg';
 import css3 from '../../assets/svgs/icons/css3.svg';
@@ -30,8 +31,8 @@ function Skills() {
   const ux_tags = ['User Research', 'Contextual Inquiry', 'Affinity Diagraming', 'Storyboarding', 'Wireframing', 'Prototyping', 'Usability Testing', 'Statistical Analysis', 'Thematic Analysis'];
   const design_tags = ['Responsive Design', 'Web Design', 'Android/iOS Design', 'Graphic Design', 'Interaction Design', 'Branding', 'Game Design', 'Pixel Art', '2D Animation', 'Character Design', 'Digital Illustration', '3D Modelling'];
   // https://simpleicons.org/ for brand icons
-  const design_stack = [adobephotoshop, adobexd, aseprite, blender, clipstudiopaint, figma, sketch, balsamiq];
-  const design_stack_names = ["Adobe Photoshop", "Adobe XD", "Aseprite", "Blender", "Clip Studio Paint", "Figma", "Sketch", "Balsamiq"];
+  const design_stack = [adobephotoshop, adobexd, aseprite, blender, clipstudiopaint, figma, sketch, balsamiq, cinema4d];
+  const design_stack_names = ["Adobe Photoshop", "Adobe XD", "Aseprite", "Blender", "Clip Studio Paint", "Figma", "Sketch", "Balsamiq", "Cinema 4D"];
 
   const dev_tags = ['Web Development', 'Game Development', 'Software Engineering', 'Algorithms and Data Structures', '3D Modelling', 'Graphics Rendering', 'Agile Methodology', 'Documentation', 'Graph Databases'];
   const dev_stack = [html5, css3, javascript, react, java, python, cplusplus,mariadb, neo4j, opengl, spacy, sass, vuedotjs, tailwindcss, framer];
