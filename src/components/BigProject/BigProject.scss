@@ -6,12 +6,12 @@
   margin: 3rem 1.5rem;
   align-items: center;
 
-  .text-container {
+  > .text-container {
     display: flex;
     flex-direction: column;
     flex: 2;
 
-    .title-container {
+    > .title-container {
       > a {
         max-width: 100%;
         font-weight: 500;
