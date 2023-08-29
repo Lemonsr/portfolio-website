@@ -16,7 +16,7 @@
     align-items: center;
   }
 
-  >.label-text {
+  > .label-text {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -24,7 +24,6 @@
     align-items: center;
     gap: 0.2rem;
 
-    background: url('src/assets/images/InstagramBg.webp');
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
