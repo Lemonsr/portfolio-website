@@ -9,10 +9,14 @@
 
   .banner-picture {
     position: relative;
+    width: 782px;
+    height: 135px;
   }
   
   .profile-picture {
     position: relative;
+    width: 133px;
+    height: 133px;
     margin-top: -4.25rem;
     border: 0.25rem solid var(--background-color);
     border-radius: 10rem;
@@ -32,6 +36,7 @@
 
     > .connections-pics {
       width: 67.32px;
+      height: 32px;
     }
 
     #everyone-you-know {

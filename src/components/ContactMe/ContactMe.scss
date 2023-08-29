@@ -60,3 +60,9 @@
     height: fit-content;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .underline {
+    width: 24rem;
+  }
+}

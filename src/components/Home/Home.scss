@@ -2,7 +2,7 @@
     display: inline-flex;
     flex-direction: column;
     width: 100%;
-    min-height: 67rem;
+    min-height: max(67rem, 100vh);
     height: fit-content;
     
     > .content-container {

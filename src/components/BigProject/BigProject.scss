@@ -39,12 +39,12 @@
   
   > img {
     width: 30rem;
-    height: auto;
+    height: 22.5rem;
     border-radius: 0.45rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .big-project-container {
     grid-template-columns: 1fr;
 
