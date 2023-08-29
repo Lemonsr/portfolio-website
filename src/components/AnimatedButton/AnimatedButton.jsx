@@ -2,6 +2,7 @@ import React from 'react';
 import './AnimatedButton.scss';
 import { motion } from 'framer-motion';
 import Instagram from '../../assets/svgs/Instagram.svg';
+import InstagramBg from '../../assets/images/InstagramBg.webp';
 
 const AnimatedButton = () => {
   return (
@@ -14,7 +15,7 @@ const AnimatedButton = () => {
       whileHover={{ 
         scale: 1.1, 
         padding: '1.8rem 3rem', 
-        backgroundImage: "url('src/assets/images/InstagramBg.webp')", 
+        backgroundImage: `url(${InstagramBg})`, 
         backgroundSize: 'cover', 
         backgroundRepeat: 'no-repeat'
       }}

@@ -29,7 +29,6 @@ function MyProjects() {
         })}
       </div>
 
-
       <Tooltip id='tooltip' />
     </div>
   </div>

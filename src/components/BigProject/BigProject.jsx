@@ -7,6 +7,8 @@ function BigProject({ data }) {
   const title_company = data.title.split('\n\n');
   const paragraphs = data.description.split('\n\n');
 
+  console.log(window.location);
+
   return (
     <motion.div className='big-project-container'
       initial={{ opacity: 0, y: 150 }}
@@ -19,8 +21,12 @@ function BigProject({ data }) {
     >
       <div className='text-container'>
         <h6 className='title-container mb-2'>
-          <div className='mr-8'>{ title_company[0] }</div>
-          <a href={ data.company_link } target='_blank' rel='noopener noreferrer'>{ title_company[1] }</a>
+          <div className='mr-8'>
+            { title_company[0] }
+          </div>
+          <a href={ data.company_link } target='_blank' rel='noopener noreferrer'>
+            { title_company[1] }
+          </a>
         </h6>
         <p className='role mb-4'>{ data.role }</p>
         {paragraphs.map((paragraph, index) => (
@@ -33,13 +39,13 @@ function BigProject({ data }) {
               data-tooltip-content={ data.tooltip[index] } 
               data-tooltip-place='bottom' 
               key={index} 
-              src={image} 
+              src={ window.location.origin + image } 
               alt={`Image ${index}`} 
             />
           ))}
         </div>
       </div>
-      <img src={ data.img } alt={`Project ${ data.id }`}/>
+      <img src={ window.location.origin + data.img } alt={`Project ${ data.id }`}/>
     </motion.div>
   );
 }

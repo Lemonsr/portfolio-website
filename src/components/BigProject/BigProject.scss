@@ -12,10 +12,8 @@
     flex: 2;
 
     .title-container {
-      display: inline-flex;
-      flex-wrap: wrap;
-
       > a {
+        max-width: 100%;
         font-weight: 500;
         color: var(--primary-color);
         letter-spacing: 0.01em;
