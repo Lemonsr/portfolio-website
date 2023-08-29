@@ -17,7 +17,7 @@ const cardConfigs = [
     "description": "An integrated platform to streamline publishing and application processes for casting jobs in Singapore, enabling recruiters and talents to unite and harness their performing arts potential.\n\n This app was designed and built by a team of five, using a user-centric design methodology from start to finish.",
     "icons": ["/assets/svgs/icons/figma.svg", "/assets/svgs/icons/balsamiq.svg"],
     "tooltip": ["Figma", "Balsamiq"],
-    "img": '/assets/images/Proj-Casting.webp'
+    "img": '/assets/images/Proj-Cast.webp'
   },
 
   {

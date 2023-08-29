@@ -45,7 +45,9 @@ function BigProject({ data }) {
           ))}
         </div>
       </div>
-      <img src={ window.location.origin + data.img } alt={`Project ${ data.id }`}/>
+      <div className='image-box'>
+        <img src={ window.location.origin + data.img } alt={`Project ${ data.id }`}/>
+      </div>
     </motion.div>
   );
 }

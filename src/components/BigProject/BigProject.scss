@@ -37,10 +37,22 @@
     }
   }
   
-  > img {
+  > .image-box {
+    overflow: hidden;
     width: 30rem;
     height: 22.5rem;
-    border-radius: 0.45rem;
+
+    > img {
+      width: 30rem;
+      height: 22.5rem;
+      border-radius: 0.45rem;
+      transition: scale 0.3s;
+      scale: 100%;
+    }
+  }
+
+  > .image-box:hover img {
+    scale: 110%;
   }
 }
 
