@@ -42,8 +42,8 @@
 }
 
 .animated-button:hover {
-  >.label-text {
-    background: none;
+  > .label-text {
+    background-image: none !important;
     background-size: auto;
     background-clip: border-box;
     -webkit-background-clip: border-box;
