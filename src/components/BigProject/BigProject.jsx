@@ -7,8 +7,6 @@ function BigProject({ data }) {
   const title_company = data.title.split('\n\n');
   const paragraphs = data.description.split('\n\n');
 
-  console.log(window.location);
-
   return (
     <motion.div className='big-project-container'
       initial={{ opacity: 0, y: 150 }}

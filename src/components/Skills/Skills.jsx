@@ -71,7 +71,7 @@ function Skills() {
         >
           <h6 className='mb-7'>Design Skills</h6>
           <p className='mb-6'>
-            As a designer, I value creating comfortable interfaces that target user needs`. 
+            As a designer, I value creating comfortable interfaces that target user needs. 
           </p>
           <p className='mb-6'>
             Being a user myself, I understand the frustration with using clunky or confusing interfaces. So, I want to bridge the gap between user expectations and design. 

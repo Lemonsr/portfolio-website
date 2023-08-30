@@ -2,8 +2,8 @@
     display: inline-flex;
     flex-direction: column;
     width: 100vw;
-    min-height: max(67rem, 100vh);
-    overflow: hidden !important;
+    min-height: 100vh;
+    overflow: hidden;
     
     > .content-container {
         display: flex;
@@ -30,7 +30,6 @@
 
         #an-aspiring {
             text-align: center;
-            margin-top: 1.2rem;
         }
     }
 }
@@ -100,3 +99,14 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    #an-aspiring {
+        margin-top: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #an-aspiring {
+        margin-top: 0.4rem;
+    }
+}

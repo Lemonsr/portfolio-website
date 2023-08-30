@@ -6,10 +6,6 @@
   background: var(--background-dark);
   width: 100vw;
   box-sizing: border-box;
-
-  > .content-container {
-    max-width: 45rem; // for screens larger than 1980px wide
-  }
 }
 
 .stats-container {
@@ -25,11 +21,19 @@
 
 .main-text {
   margin-top: 0.88rem;
-  align-self: stretch;
+  //align-self: stretch;
 }
 
 // Rearrange items when screen gets too small
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1080px) {
+  .aboutme-container {
+    > .content-container {
+      max-width: 45rem; // for screens larger than 1980px wide
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
   .aboutme-container {
     grid-template-columns: 1fr; // Single column layout
   }
@@ -37,5 +41,15 @@
   .stats-container {
     justify-content: left;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aboutme-container > .content-container {
+    width: 80vw;
+  }
+
+  .stats-container {
+    gap: 0.85rem;
   }
 }

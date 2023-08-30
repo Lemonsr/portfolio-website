@@ -19,7 +19,9 @@
   color: var(--text-subtitle);
   font-size: 1rem;
   align-self: center;
+  text-align: center;
   letter-spacing: 0.02em;
+  padding: 0rem 0.3rem;
 }
 
 @media screen and (min-width: 1440px) {
@@ -52,11 +54,11 @@
 
 @media screen and (max-width: 767px) {
   .stats-card {
-    width: 9rem;
-    height: 9rem;
+    width: 25vw;
+    min-height: 25vw;
   }
 
   #description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }

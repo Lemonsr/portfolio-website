@@ -4,6 +4,7 @@ import Parallax from '../Parallax/Parallax';
 import { motion } from 'framer-motion';
 
 function Home() {
+  // adjust height of parallax bg dynamically to show the entire bg with aspect ratio of screen despite absolute positioning -- bug: not working on production side.
   const parentRef = useRef(null);
 
   const adjustParentHeight = (childHeight) => {
