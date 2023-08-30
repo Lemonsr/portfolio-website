@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Home.scss';
 import Parallax from '../Parallax/Parallax';
 import { motion } from 'framer-motion';
 
 function Home() {
-  return <div id='home' className='home-container'>
+  const parentRef = useRef(null);
 
-    <Parallax />
+  const adjustParentHeight = (childHeight) => {
+    if (parentRef.current) {
+      parentRef.current.style.height = `${childHeight}px`;
+    }
+  };
+
+  return <div id='home' className='home-container' ref={parentRef}>
+
+    <Parallax adjustHeight={adjustParentHeight}/>
 
     <motion.div  
       className='content-container'
