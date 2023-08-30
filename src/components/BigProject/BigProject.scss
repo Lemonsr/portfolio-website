@@ -7,13 +7,10 @@
   align-items: center;
 
   > .text-container {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-
     > .title-container {
       > a {
-        max-width: 100%;
+        display: inline-block;
+        white-space: normal;
         font-weight: 500;
         color: var(--primary-color);
         letter-spacing: 0.01em;

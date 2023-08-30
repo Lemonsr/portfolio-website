@@ -1,7 +1,7 @@
 const cardConfigs = [
   {
     "id": "1",
-    "title": "uNivUS Mobile/Web\n\n@National University of Singapore",
+    "title": "uNivUS\n\n@National University of Singapore",
     "company_link": "https://www.nus.edu.sg/",
     "role": "UI/UX Designer, Researcher",
     "description": "uNivUS is an essential app that centralizes access to digital services for all NUS members. As a smart personal assistant, uNivUS personalises every individual's campus life through custom dashboards, armed with features such as a digital ID, calendar and app shortcuts.\n\nI worked on refactoring the mobile design and created a prototype for a new web platform design with the aim of broadening outreach.",
