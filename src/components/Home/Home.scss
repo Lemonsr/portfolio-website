@@ -1,9 +1,10 @@
 .home-container {
     display: inline-flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     min-height: max(67rem, 100vh);
     height: fit-content;
+    overflow: hidden !important;
     
     > .content-container {
         display: flex;

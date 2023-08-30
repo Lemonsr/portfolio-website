@@ -29,10 +29,19 @@ function LinkedIn() {
 
     <div className='linkedin-buttons'>
       <a className='connect' 
-      href="https://www.linkedin.com/in/liawxinyan2001/"
-      target="_blank"
-      rel="noopener noreferrer">Connect</a>
-      <a className='resume'>Get her resume</a>
+        href="https://www.linkedin.com/in/liawxinyan2001/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Connect
+      </a>
+      <a className='resume'
+        href= {window.location.origin + "/xinyanresume.pdf"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Get her resume
+      </a>
     </div>
 
   </div>
