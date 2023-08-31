@@ -79,3 +79,9 @@
     grid-template-columns: 1fr; // Single column layout
   }
 }
+
+@media screen and (max-width: 767px) {
+  .skills-container > .grid-container > .skill-description {
+    border-radius: 1.4rem;
+  }
+}
