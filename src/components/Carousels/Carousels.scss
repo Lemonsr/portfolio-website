@@ -61,14 +61,20 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .slide {
+    scale: 80%;
+  }
+}
+
+@media screen and (min-width: 525px) and (max-width: 767px) {
   .slide {
     scale: 60%;
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .carousel {
-    height: 20rem;
+@media screen and (max-width: 524px) {
+  .slide {
+    scale: 40%;
   }
 }
