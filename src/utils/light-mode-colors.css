@@ -51,4 +51,7 @@
     --contact-me-text-bg: linear-gradient(270deg, #FFF 0%, #FFF 48.44%, rgba(255, 255, 255, 0.00) 100%);
 
     --icon-filter: invert(12%) brightness(87%) contrast(90%);
+
+    --overlay-color-init: rgba(0, 0, 0, 0);
+    --overlay-color-hover: rgba(0, 0, 0, 0.5);
 }

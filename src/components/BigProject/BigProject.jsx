@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './BigProject.scss';
 import { motion } from 'framer-motion';
 
@@ -6,6 +6,16 @@ function BigProject({ data }) {
   // Split content into multiple paragraphs if needed.
   const title_company = data.title.split('\n\n');
   const paragraphs = data.description.split('\n\n');
+
+  const [show, setShow] = useState(false);
+
+  const showOverlay = () => {
+      setShow(true);
+  };
+
+  const hideOverlay = () => {
+      setShow(false);
+  };
 
   return (
     <motion.div className='big-project-container'
@@ -44,9 +54,20 @@ function BigProject({ data }) {
           ))}
         </div>
       </div>
-      <div className='image-box'>
-        <a href={ data.casestudy } target='_blank' rel='noopener noreferrer'>
+      <div className='image-box'
+        onMouseOver={showOverlay}
+        onMouseLeave={hideOverlay}
+      >
+        <a className='image-with-text' href={ data.casestudy } target='_blank' rel='noopener noreferrer'>
           <img src={ window.location.origin + data.img } alt={`Project ${ data.id }`}/>
+          {show && (
+            <div className='image-text'>
+              { data.casestudy ? 
+                <p>Click to view the case study!</p> :
+                <p>Case study coming soon.</p>
+              }
+            </div>
+          )}
         </a>
       </div>
     </motion.div>
