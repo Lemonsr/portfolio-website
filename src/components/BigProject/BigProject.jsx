@@ -20,11 +20,11 @@ function BigProject({ data }) {
     >
       <div className='text-container'>
         <h6 className='title-container mb-2'>
-          <div className='mr-8'>
+          <a className='title mr-8' href={ data.casestudy } target='_blank' rel='noopener noreferrer'>
             { title_company[0] }
-          </div> 
+          </a> 
           { title_company[1] && // check if title_company[1] exists
-          <a href={ data.company_link } target='_blank' rel='noopener noreferrer'>
+          <a className='company' href={ data.company_link } target='_blank' rel='noopener noreferrer'>
             { title_company[1] }
           </a> }
         </h6>
@@ -46,7 +46,9 @@ function BigProject({ data }) {
         </div>
       </div>
       <div className='image-box'>
-        <img src={ window.location.origin + data.img } alt={`Project ${ data.id }`}/>
+        <a href={ data.casestudy } target='_blank' rel='noopener noreferrer'>
+          <img src={ window.location.origin + data.img } alt={`Project ${ data.id }`}/>
+        </a>
       </div>
     </motion.div>
   );

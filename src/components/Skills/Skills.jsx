@@ -35,7 +35,7 @@ function Skills() {
   const design_stack_names = ["Adobe Photoshop", "Adobe XD", "Aseprite", "Blender", "Clip Studio Paint", "Figma", "Sketch", "Balsamiq", "Cinema 4D"];
 
   const dev_tags = ['Web Development', 'Game Development', 'Software Engineering', 'Algorithms and Data Structures', '3D Modelling', 'Graphics Rendering', 'Agile Methodology', 'Documentation', 'Graph Databases'];
-  const dev_stack = [html5, css3, javascript, react, java, python, cplusplus,mariadb, neo4j, opengl, spacy, sass, vuedotjs, tailwindcss, framer];
+  const dev_stack = [html5, css3, javascript, react, java, python, cplusplus, mariadb, neo4j, opengl, spacy, sass, vuedotjs, tailwindcss, framer];
   const dev_stack_names = ["Html5", "Css3", "JavaScript", "React", "Java", "Python", "C++", "MariaDB", "Neo4J", "OpenGL", "spaCy", "Sass/Scss", "Vue.js", "Tailwind", "Framer"];
 
   const skill_variants = {

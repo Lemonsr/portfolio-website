@@ -8,7 +8,20 @@
 
   > .text-container {
     > .title-container {
-      > a {
+      > .title {
+        display: inline-block;
+        white-space: normal;
+        font-weight: 500;
+        color: var(--text-main);
+        letter-spacing: 0.01em;
+        font-size: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      > .company {
         display: inline-block;
         white-space: normal;
         font-weight: 500;
@@ -40,17 +53,20 @@
     height: 22.5rem;
     border-radius: 0.45rem;
 
-    > img {
-      width: 30rem;
-      height: 22.5rem;
-      border-radius: 0.45rem;
-      transition: scale 0.3s;
-      scale: 100%;
-    }
+    
+      > a > img {
+        width: 30rem;
+        height: 22.5rem;
+        border-radius: 0.45rem;
+        transition: scale 0.3s;
+        scale: 100%;
+      }
+    
   }
 
   > .image-box:hover img {
     scale: 110%;
+    cursor: pointer;
   }
 }
 
@@ -62,7 +78,7 @@
         width: 30vw;
         height: 22.5vw;
 
-      > img {
+      > a > img {
         width: 30vw;
         height: 22.5vw;
       }
@@ -82,7 +98,7 @@
       width: 70vw;
       height: 52.5vw;
       
-      > img {
+      > a > img {
         width: 70vw;
         height: 52.5vw;
         order: -1; // move above text when view is shrunk
