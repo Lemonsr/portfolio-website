@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 function BigProject({ data }) {
   // Split content into multiple paragraphs if needed.
   const title_company = data.title.split('\n\n');
-  const company_link = {};
   const paragraphs = data.description.split('\n\n');
 
   return (
