@@ -28,7 +28,7 @@ import { motion } from 'framer-motion';
 import { Tooltip } from 'react-tooltip';
 
 function Skills() {
-  const ux_tags = ['User Research', 'Contextual Inquiry', 'Affinity Diagraming', 'Storyboarding', 'Wireframing', 'Prototyping', 'Usability Testing', 'Statistical Analysis', 'Thematic Analysis'];
+  const ux_tags = ['User Research', 'Contextual Inquiry', 'Affinity Diagramming', 'Storyboarding', 'Wireframing', 'Prototyping', 'Usability Testing', 'Statistical Analysis', 'Thematic Analysis'];
   const design_tags = ['Responsive Design', 'Web Design', 'Android/iOS Design', 'Graphic Design', 'Interaction Design', 'Branding', 'Game Design', 'Pixel Art', '2D Animation', 'Character Design', 'Digital Illustration', '3D Modelling'];
   // https://simpleicons.org/ for brand icons
   const design_stack = [adobephotoshop, adobexd, aseprite, blender, clipstudiopaint, figma, sketch, balsamiq, cinema4d];

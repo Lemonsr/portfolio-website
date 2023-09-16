@@ -22,6 +22,7 @@
             align-items: center;
 
             #hello {
+                font-family: 'Signika Negative', sans-serif;
                 color: var(--title-text);
                 margin-bottom: 0;
                 transform: translateX(-28%);
@@ -68,21 +69,21 @@
 
 .find-out-more {
     display: inline-flex;
-    padding: 0.5rem 1.25rem;
+    padding: 0.8rem 1.5rem;
     align-items: flex-start;
     gap: 0.625rem;
     margin-top: 3vw;
 
     color: var(--text-inverted);
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 450;
     letter-spacing: .1rem;
 
     border-radius: 2.5rem;
     background: var(--primary-color);
     transition: background 0.3s ease;
-
-    box-shadow: var(--primary-button-shadow);
+    
+    // box-shadow: var(--primary-button-shadow);
 
     .arrow {
         display: inline-block;

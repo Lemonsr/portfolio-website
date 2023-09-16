@@ -19,6 +19,7 @@ const cardConfigs = [
     "icons": ["/assets/svgs/icons/figma.svg", "/assets/svgs/icons/balsamiq.svg"],
     "tooltip": ["Figma", "Balsamiq"],
     "img": '/assets/images/Proj-Cast.webp',
+    "casestudy": "https://uxfol.io/p/46678851/02e2edd5"
   },
 
   {

@@ -1,6 +1,6 @@
 .quote-container {
   margin: auto;
-  background: var(--background-dark);
+  background: linear-gradient(var(--background-color), var(--background-dark));
   width: 100vw;
   box-sizing: border-box;
   
@@ -13,5 +13,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    > h1 {
+      font-weight: 750;
+    }
   }
 }

@@ -19,9 +19,9 @@ function App() {
       <NavBar />
       <Home />
       <AboutMe />
+      <MyProjects />
       <Quote />
       <Skills />
-      <MyProjects />
       <MyArtworks />
       <ContactMe />
       {/*

@@ -13,9 +13,9 @@ function Quote() {
         bounce: 0.4,
         duration: 2}}
     >
-      <h1>I am constantly exploring</h1>
-      <h1>new best practices</h1>
-      <h1>and workflows.</h1>
+      <h1 className='quote'>I am constantly exploring</h1>
+      <h1 className='quote'>new best practices</h1>
+      <h1 className='quote'>and workflows.</h1>
     </motion.div>
   </div>
 }

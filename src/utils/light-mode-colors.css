@@ -18,7 +18,7 @@
     --text-inverted: #FCFCFC;
 
     /* Accent colors */
-    --accent-header: linear-gradient(300deg, #6645eb, #C7549F, #515aaddc, #995FA0, #D45192, #b1376ed8, #764ce9, #D74D8B);
+    --accent-header: linear-gradient(300deg, #7457e9d3, #C7549F, #515aaddc, #D45192, #764ce9c5, #D74D8B);
     --primary-button-shadow: 0px 2px 10px 0px rgba(227, 118, 111, 0.50);
     --title-text: #898E9F;
 
