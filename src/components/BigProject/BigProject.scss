@@ -79,7 +79,7 @@
       }
     }
   }
-  
+
   .image-box::before {
     content: '';
     /* Create a pseudo-element */
@@ -113,7 +113,7 @@
   .big-project-container {
     grid-column-gap: 3rem;
 
-    >.image-box {
+    > .image-box {
         width: 30vw;
         height: 22.5vw;
 

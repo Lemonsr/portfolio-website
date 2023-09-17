@@ -31,6 +31,7 @@ const cardConfigs = [
     "icons": ["/assets/svgs/icons/figma.svg", "/assets/svgs/icons/adobephotoshop.svg", "/assets/svgs/icons/sketch.svg", "/assets/svgs/icons/cinema4d.svg"],
     "tooltip": ["Figma", "Adobe Photoshop", "Sketch", "Cinema 4D"],
     "img": '/assets/images/Proj-Booyah.webp',
+    "casestudy": "https://uxfol.io/p/bce97967/02e2f06d"
   }
 ]
 // Key value pair dictionary

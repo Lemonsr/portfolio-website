@@ -21,7 +21,7 @@ function MyProjects() {
           whileInView={{ opacity: 1, y: 0 }}>
           <h2>A brief showcase of my projects.</h2>
         </motion.div>
-        <p className='mt-4 subheader'>Here are some of the larger projects that I’ve worked on. More case studies are coming soon, stay tuned!</p>
+        <p className='mt-4 subheader'>Click on the images to view case studies!</p>
       </div>
 
       <div className='big-projects-container'>
